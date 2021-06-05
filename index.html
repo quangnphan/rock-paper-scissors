@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="score">
+        <h2>score</h2>
+        <span>12</span>
+      </div>
+    </header>
+    <main id="main">
+        <button class="btn paper" id="paper" data-choice="paper">
+          <span class="wrapper"><img src="images/icon-paper.svg" alt="paper"></span>
+        </button>
+        <button class="btn scissors" id="scissors" data-choice="scissors">
+          <span class="wrapper"><img src="images/icon-scissors.svg" alt="scissors"></span>
+        </button>
+        <button class="btn rock" id="rock" data-choice="rock">
+          <span class="wrapper"><img src="images/icon-rock.svg" alt="rock"></span>
+        </button>
+    </main>
+  
+    <div class="selection">
+      <div class="user">
+        <h1>You Picked</h1>
+        <button class="btn paper" type="button" id="user-select">
+          <span class="wrapper">
+            <img src="images/icon-paper.svg" alt="">
+          </span>
+        </button>
+      </div>
+      <div class="result">
+        <h1>You <span id="win">Win</span></h1>
+        <button class="reset-btn" id="reset" type="button">Play again</button>
+      </div>
+      <div class="computer">
+        <h1>The House Picked</h1>
+        <button class="btn rock" type="button" id="computer-select">
+          <span class="wrapper">
+            <img src="images/icon-rock.svg" alt="icon">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="rules-btn">rules</button>
+  </div>
+  <div class="rules-modal">
+    <div class="modal-flex">
+      <h1>rules</h1>
+      <img src="images/icon-close.svg" alt="icon-close">
+    </div>
+    <img src="images/image-rules.svg" alt="image-rules">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
